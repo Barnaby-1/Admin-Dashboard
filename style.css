@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+header {
+    background-color: #fff;
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+nav {
+    background-color: #06b6d4;
+    grid-area: 1 / 1 / 10 / 1;
+}
+
+main {
+    background-color: #94a3b8;
+    grid-area: 2 / 2 / 10 / 4;
+}
