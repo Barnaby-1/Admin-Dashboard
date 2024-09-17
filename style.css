@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,17 +14,106 @@ body {
     grid-template-rows: repeat(5, 1fr);
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    background-color: #e5e7ec;
+    grid-area: 2 / 2 / 10 / 4;
+}
+
+
+/* header */
+
 header {
     background-color: #fff;
+    position: relative;
+    box-shadow: 0px 5px 5px #bec3cd;
     grid-area: 1 / 2 / 1 / 4;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
+
+#header-top-half, #header-bottom-half {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+#header-top-half input {
+    height: 35%;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20vw;
+    padding-left: 2%;
+    background-color: #e5e7ec;
+    border-color: transparent;
+    font-size: 0.75rem;
+}
+
+#header-top-half h3 {
+    font-size: 0.75rem;
+    justify-self: center;
+    align-self: center;
+}
+
+#name-welcome {
+    padding-left: 12%;
+    align-self: center;
+}
+
+#name-welcome h5 {
+    font-size: 0.55rem;
+    margin-bottom: 0.5vh;
+}
+
+#header-buttons {
+    align-self: center;
+    justify-self: center;
+}
+
+.header-action-buttons {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    border-radius: 30vw;
+    padding: 0.75vh 2vw 0.75vh 2vw;
+    border-color: transparent;
+    background-color: #06b6d4;
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.header-action-buttons:active {
+    background-color: #059bb4;
+}
+
+/* sidebar */
 
 nav {
     background-color: #06b6d4;
     grid-area: 1 / 1 / 10 / 1;
+    color: #fff;
+    padding-left: 1vw;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 18fr;
+    gap: 5vh;
 }
 
-main {
-    background-color: #94a3b8;
-    grid-area: 2 / 2 / 10 / 4;
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav h1 {
+    padding-top: 1vh;
+}
+
+#nav-links, #preferences {
+    display: grid;
+    gap: 1.5vh;
+}
+
+#preferences {
+    grid-template-rows: repeat(2, 1fr) 18fr;
 }
