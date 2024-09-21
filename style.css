@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 main {
@@ -46,10 +46,8 @@ header {
 }
 
 #header-top-half input {
-    height: 35%;
-    width: 75%;
-    align-self: center;
-    justify-self: center;
+    height: 30%;
+    width: 90%;
     border-radius: 20vw;
     padding-left: 2%;
     background-color: #e5e7ec;
@@ -57,10 +55,25 @@ header {
     font-size: 0.75rem;
 }
 
+#search-bar {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+    gap: 1vw;
+}
+
+#search-bar svg {
+    justify-self: end;
+}
+
 #header-top-half h3 {
     font-size: 0.75rem;
     justify-self: center;
     align-self: center;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 1vw;
 }
 
 #name-welcome {
@@ -105,12 +118,24 @@ nav {
     gap: 5vh;
 }
 
+nav h3 {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 1.5vw;
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
+    font-size: 1rem;
 }
 
-nav h1 {
+nav #dashboard-title {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
     padding-top: 1vh;
 }
 
@@ -156,9 +181,9 @@ main {
 }
 
 .project-display-box-shadow {
-    box-shadow: 11px 11px 5px #bec3cd;;
-    height: 19.5vh;
-    width: 24.5vw;
+    box-shadow: var(--grey-box-shadow);
+    height: 20vh;
+    width: 25vw;
     border-radius: 12px;
 }
 
@@ -228,4 +253,19 @@ main {
 
 .trending-projects p {
     font-size: 0.55rem;
+}
+
+/* images */
+
+nav #dashboard-title svg {
+    height: 4vh;
+}
+
+nav svg {
+    filter: invert(100%) sepia(0%) saturate(7427%) hue-rotate(23deg) brightness(118%) contrast(118%);
+    height: 3vh;
+}
+
+header svg {
+    height: 3vh;
 }
